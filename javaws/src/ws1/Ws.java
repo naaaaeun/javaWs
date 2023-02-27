@@ -5,29 +5,47 @@ import java.util.Scanner;
 public class Ws {
 
 	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		while(true) {
-			System.out.println("Input Command [q,i,s]");
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			System.out.println("Input Command [q, a1, a2, a3, a4 ]");
 			String cmd = sc.next();
-			
-			if(cmd.equals("q")) {
+
+			if (cmd.equals("q")) {
 				System.out.println("quit..");
 				break;
-			}else if(cmd.equals("i")) {
-				System.out.println("insert");
-				System.out.println("input id");
-				String id= sc.next();
-				System.out.println("input pw");
-				String pw= sc.next();
-				System.out.println("input name");
-				String name= sc.next();
-				System.out.printf("id : %s pw: %d 이름: %s \n",id, pw.length(), name);
-			}else if(cmd.equals("s")) {
-				System.out.println("select");
-			}else {
-				System.out.println("invalide command..\ntry again.");
+			} else if (cmd.equals("a1")) {
+				// 5~9까지의 숫자를 입력 받는다.
+				// 입력 받은 숫자만큼 배열을 생성하고
+				// 1~9 까지의 랜덤한 숫자를 배열에 넣는다.
+				// 배열 정보를 출력한다.
+				// 배열의 합과 평균을 출력한다.
+			} else if (cmd.equals("a2")) {
+
+				// 5~9까지의 숫자를 입력 받는다.
+				// 입력 받은 숫자만큼 배열을 생성하고
+				// 1~9 까지의 랜덤한 숫자를 배열에 넣는다.
+				// 배열 정보를 출력한다.
+				// 배열의 합과 평균을 출력한다.
+				// 짝수번째 숫자들의 합과 평균을 출력한다.
+			} else if (cmd.equals("a3")) {
+
+				// 5~9까지의 숫자를 입력 받는다.
+				// 입력 받은 숫자만큼 배열을 생성하고
+				// 1~9 까지의 랜덤한 숫자를 배열에 넣는다.
+				// 배열 정보를 출력한다.
+				// 배열의 합과 평균을 출력한다.
+				// 짝수 값만의 합과 평균을 출력한다.
+			} else if (cmd.equals("a4")) {
+
+				// 5~9까지의 숫자를 2개 입력 받는다.
+				// 2차원 배열을 만든다.
+				// 1~9 까지의 랜덤한 숫자를 배열에 넣는다.
+				// 배열 정보를 출력한다.
+				// 배열의 합과 평균을 출력한다.
+			} else {
+				System.out.println("Invalid input.. try again");
 			}
-		}//end while
+		} // end while
 		System.out.println("bye");
 		sc.close();
 	}
