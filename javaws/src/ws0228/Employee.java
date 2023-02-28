@@ -7,14 +7,17 @@ public class Employee {
 	private int salary;
 
 	public Employee() {
+		this.id = "default001";
+		this.name = "김국민";
+		this.salary = 1850000;
 	}
 
 	public Employee(String id, String name, int salary) {
 		this.id = id;
 		this.name = name;
-		if(salary < 0) {
+		if (salary < 0) {
 			this.salary = 0;
-		}else {
+		} else {
 			this.salary = salary;
 		}
 	}
