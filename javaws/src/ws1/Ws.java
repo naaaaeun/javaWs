@@ -38,7 +38,7 @@ public class Ws {
 					sum1 = sum1 + i;
 				}
 
-				avg1 = sum1 / a * 1.0;
+				avg1 = sum1 / a * 1.0;//
 
 				System.out.printf("합: %d 평균:%.2f\n", sum1, avg1);
 
